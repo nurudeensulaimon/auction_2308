@@ -21,4 +21,13 @@ RSpec.describe Auction do
 
     expect(@auction.items).to eq([@item1,@item2])
    end
+
+   it 'can add more items in the array' do 
+    @auction.add_item(@item1)
+    @auction.add_item(@item2)
+    @auction.add_item(@item3)
+    @auction.add_item(@item4)
+    @auction.add_item(@item5)
+
+   end
 end
