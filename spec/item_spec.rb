@@ -1,5 +1,7 @@
 require 'rspec'
 require './lib/item'
+require './lib/auction'
+require './lib/attendee'
 require 'pry'
 
 RSpec.describe Item do 
@@ -49,7 +51,7 @@ RSpec.describe Item do
    it 'has a method current_high_bid' do
     @item1.add_bid(@attendee2, 20)
     @item1.add_bid(@attendee1, 22)
-    
+
     expect(@item1.current_high_bid).to eq(22)
   end 
 end

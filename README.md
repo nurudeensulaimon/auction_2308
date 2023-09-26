@@ -132,7 +132,7 @@ pry(main)> auction.unpopular_items
 
 pry(main)> item3.add_bid(attendee2, 15)
 
-pry(main)> auction.unpopular_items
+@pry(main)> auction.unpopular_items
 #=> [#<Item:0x00007fdc07925280 ...>, #<Item:0x00007fdc071695f0 ...>]
 
 pry(main)> auction.potential_revenue
